@@ -78,7 +78,7 @@ json
 ## Demo
 ### Web App Demo
 
-Click [this link](https://drive.google.com/file/d/1woyobzp41syTViCbU6MotP1vlPRzf5gK/view?usp=drive_link) to watch a **_demo video_** showcasing the features of the Historical Data Charts Web App.
+Click [this link](https://drive.google.com/file/d/1woyobzp41syTViCbU6MotP1vlPRzf5gK/view?usp=drive_link) to watch a **_demo video_** showcasing the features of the Countries and Capitals Web App.
 
 ## Acknowledgments
 
