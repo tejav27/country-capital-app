@@ -1,4 +1,3 @@
-markdown
 # Countries and Capitals Display with Next.js and Shadcn
 
 This project is a simple Next.js application that fetches and displays a list of countries and their capitals from an external API. The data is fetched on the server-side and displayed on the client-side, utilizing components from the Shadcn UI library.
