@@ -22,7 +22,7 @@ These instructions will help you set up and run the project on your local machin
 1. Clone the repository:
 
    bash
-   git clone https://github.com/your-username/countries-and-capitals.git
+   git clone https://github.com/tejav27/country-capital-app.git
    cd countries-and-capitals
    
 
@@ -75,6 +75,10 @@ json
   ]
 }
 
+## Demo
+### Web App Demo
+
+Click [this link](https://drive.google.com/file/d/1woyobzp41syTViCbU6MotP1vlPRzf5gK/view?usp=drive_link) to watch a **_demo video_** showcasing the features of the Historical Data Charts Web App.
 
 ## Acknowledgments
 

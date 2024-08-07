@@ -48,11 +48,11 @@ export default function CountryList() {
         value={search}
         onChange={(e) => setSearch(e.target.value)}
       />
-      <Table className="mim-w-full bg-white">
+      <Table className="mim-w-full bg-white border-radius-8">
         <TableCaption>A list of countries and their capitals</TableCaption>
         <TableHeader>
           <TableRow className="">
-            <TableHead className="px-16 py-4 font-bold bg-teal-500 text-blue-50">Country</TableHead>
+            <TableHead className="px-16 py-4 font-xl bg-teal-500 text-blue-50">Country</TableHead>
             <TableHead className="px-16 py-4 font-bold bg-teal-500 text-blue-50">Capital</TableHead>
           </TableRow>
         </TableHeader>
