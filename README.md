@@ -1,36 +1,84 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+markdown
+# Countries and Capitals Display with Next.js and Shadcn
+
+This project is a simple Next.js application that fetches and displays a list of countries and their capitals from an external API. The data is fetched on the server-side and displayed on the client-side, utilizing components from the Shadcn UI library.
+
+## Features
+
+- Fetches country and capital data from an external API
+- Displays the data in a clean, styled list using Shadcn components
+- Includes a search box to filter countries by name
 
 ## Getting Started
 
-First, run the development server:
+These instructions will help you set up and run the project on your local machine.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### Prerequisites
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Node.js (version 14 or higher)
+- npm (version 6 or higher)
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+### Installation
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+1. Clone the repository:
 
-## Learn More
+   bash
+   git clone https://github.com/your-username/countries-and-capitals.git
+   cd countries-and-capitals
+   
 
-To learn more about Next.js, take a look at the following resources:
+2. Install the dependencies:
+   ```
+   npm install
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+3. Run the development server:
+   ```
+   npm run dev
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+4. Open your browser and navigate to `http://localhost:3000` to see the application in action.
 
-## Deploy on Vercel
+## Project Structure
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- `app/api/countries/route.js`: Server-side API route to fetch country and capital data.
+- `components/CountryList.js`: Client-side component to display the list of countries and their capitals.
+- `app/page.js`: Main page that renders the `CountryList` component.
+- `styles/globals.css`: Global CSS file, including styles from Shadcn UI.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Usage
+
+The main page displays a list of countries and their capitals. You can use the search box to filter the list by country name.
+
+## Example API Response
+
+The application fetches data from the following API endpoint: `https://countriesnow.space/api/v0.1/countries/capital`.
+
+Sample API response:
+
+json
+{
+  "error": false,
+  "msg": "countries and capitals retrieved",
+  "data": [
+    {
+      "name": "Afghanistan",
+      "capital": "Kabul",
+      "iso2": "AF",
+      "iso3": "AFG"
+    },
+    {
+      "name": "Aland Islands",
+      "capital": "Mariehamn",
+      "iso2": "AX",
+      "iso3": "ALA"
+    }
+  ]
+}
+
+
+## Acknowledgments
+
+- [Next.js](https://nextjs.org/)
+- [Shadcn UI](https://ui.shadcn.com/)
+- [Countries Now API](https://countriesnow.space/)
